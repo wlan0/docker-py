@@ -123,6 +123,8 @@ class ContainerApiMixin(object):
         params = {
             'name': name
         }
+        print u
+        print config
         res = self._post_json(u, data=config, params=params)
         return self._result(res, True)
 
